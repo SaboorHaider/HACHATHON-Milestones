@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder</h1>
+    
+    <div class="resume-builder-container">
+        <form id="resume-form"></form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Name:*</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                
+                <label for="email">Email:*</label>
+                <input type="email" id="email" placeholder="Enter your gmail" required>
+    
+                <label for="phone">Phone:*</label>
+                <input type="phone" id="phone" placeholder="Enter your number" required>
+                <label for="country">Country*</label>
+                <div>
+                    <select name="country" id="country">
+                    <option value="">Select Your Country</option>
+                    <option value="United States">United States</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Russia">Russia</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Iraq">Iran</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Austrailia">Austrailia</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Spain">Spain</option>
+                    <option value="North korea">North korea</option>
+                    <option value="India">India</option>
+                    </select>
+            </div>
+            </fieldset>
+            <br>
+         
+            <fieldset class="form-group">
+                <label for="education">Education*</label>
+                <textarea id="education" rows="4" required placeholder="Enter your education"></textarea>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" rows="4"placeholder="Enter your skills" ></textarea>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="experience">Work Experience</label>
+                <textarea id="experience" rows="4" placeholder="Enter your Work-Experience"></textarea>
+            </fieldset>
+
+            <button type="button" id="generate-resume">Generate Resume</button>
+        </form>
+
+        <div id="resume-output" class="resume-output"></div>
+        <div class="savvy"><p>ScriptSavvySaboor | 2024</p></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
